@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="modulo.html">Modulo</a></li>
+            <li><a href="tabella.html">Tabella</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Modulo</h1>
+        <form name="Dati cliente" onsubmit="alert('Abbiamo ricevuto il tuo messaggio!')">
+            
+            <!--Dati anagrafici e di contatto-->
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Inserisci nome" required>
+            </div>
+            <div> 
+                <label for="cognome">Cognome</label>
+                <input type="text" placeholder="Inserisci cognome" disabled>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Inserisci email" id="">
+            </div>
+            <div>
+                <label for="password">Password </label>
+                <input type="password" placeholder="Inserisci password" id="">
+            </div>
+            <div>
+                <label for="note">Note</label> 
+                <textarea name="note" id="note" cols="30" rows="10"></textarea>
+            </div>
+
+            <!--Genere-->    
+            <div>
+                <span>Genere</span>
+                <div>
+                    <input type="radio" name="Genere" id="Maschio"> 
+                    <label for="Maschio">Maschio</label>
+                </div>
+                <div>
+                    <input type="radio" name="Genere" id="femmina"> 
+                    <label for="femmina">Femmina</label>
+                </div>
+            </div>
+
+            <!--Data di nascita-->
+            <div>
+                <label for="data-nascita">Data di nascita </label>
+                <input type="date" name="data-nascita" id="data-nascita">
+            </div>
+
+            <!--Preferenze-->
+            <div>
+                <label for="razza-cane">Razza di cane preferita</label> 
+                <select name="razza-cane" id="razza-cane">
+                    <option value="maltipoo">Maltipoo</option>
+                    <option value="barboncino">Barboncino</option>
+                    <option value="Maltese">Maltese</option>
+                    <option value="Bichon frisé">Bichon frisé</option>
+                </select>
+            </div>
+
+            <!--Iscrizione-->
+            <div>
+                <input type="checkbox" name="newsletter" id="newsletter"> 
+                <label for="newsletter">Iscriviti alla newsletter</label>
+            </div>
+
+            <div>
+                <button type="submit">Invio</button> 
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
